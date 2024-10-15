@@ -17,7 +17,7 @@ import jakarta.persistence.Table;
 import java.util.Date;
 
 @Entity
-@Table(name = "datasets_info")
+@Table(name = "tb_datasets_info")
 public class TbDatasetsInfoEntity {
 
     /**
