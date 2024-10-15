@@ -5,74 +5,65 @@
  * @Description:
  */
 
-package com.pipi.imageannotation.pojo.entity;
+package com.pipi.imageannotation.pojo.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import lombok.Data;
 
 import java.util.Date;
 
-@Entity
-@Table(name = "datasets_info")
-public class TbDatasetsInfoEntity {
+@Data
+public class DatasetsInfo {
 
     /**
      * 主键
      */
     @Id
     @TableId(type = IdType.AUTO)
-    @Column(name = "id", unique = true, nullable = false, columnDefinition = "INT8 AUTO_INCREMENT")
     private Long id;
 
     /**
      * 数据集名称
      */
-    @Column(name = "name", columnDefinition = "VARCHAR(256)")
     private String name;
 
     /**
      * 数据集所包含的图片数量
      */
-    @Column(name = "image_count", columnDefinition = "INT8")
     private Long imageCount;
 
     /**
      * 数据集中包含的目标总数
      */
-    @Column(name = "target_count", columnDefinition = "INT8")
     private Long targetCount;
 
     /**
      * 类别数量
      */
-    @Column(name = "class_count", columnDefinition = "INT4")
     private Integer classCount;
 
     /**
      * 每个类别的名字 中间用 , 间隔
      */
-    @Column(name = "pre_class_name", columnDefinition = "TEXT")
     private String preClassName;
 
     /**
      * 每个类别的数量 中间用 , 间隔
      */
-    @Column(name = "pre_class_count", columnDefinition = "TEXT")
     private String preClassCount;
 
     /**
      * 删除位
      */
-    @Column(name = "delete_bit", columnDefinition = "BOOL")
     private Boolean deleteBit;
 
     /**
      * 创建时间
      */
-    @Column(name = "create_time", columnDefinition = "TIMESTAMP")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
 }
