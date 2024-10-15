@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: image-annotation-service
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/db_datasets?serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8888
