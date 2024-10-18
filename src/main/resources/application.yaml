@@ -9,6 +9,11 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-
 server:
   port: 8888
+#  servlet:
+#    context-path: /api/fileManager
+
+
+file-manager:
+  default-file-path: E:/yolov8
