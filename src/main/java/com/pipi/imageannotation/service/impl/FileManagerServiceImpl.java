@@ -7,11 +7,10 @@
 
 package com.pipi.imageannotation.service.impl;
 
-import com.pipi.imageannotation.pojo.domain.FileInfo;
+import com.pipi.imageannotation.pojo.domain.virtual.FileInfo;
 import com.pipi.imageannotation.pojo.vo.FileTreeInfoVO;
 import com.pipi.imageannotation.service.FileManagerService;
 import com.pipi.imageannotation.utils.FileUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;

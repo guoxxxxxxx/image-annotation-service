@@ -14,6 +14,5 @@ server:
 #  servlet:
 #    context-path: /api/fileManager
 
-
 file-manager:
-  default-file-path: E:/yolov8
+  default-file-path: E:/image-annotation

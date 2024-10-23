@@ -10,6 +10,7 @@ package com.pipi.imageannotation.pojo.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Column;
 import jakarta.persistence.Id;
@@ -19,6 +20,7 @@ import java.util.Date;
 
 
 @Data
+@TableName("tb_image_info")
 public class ImageInfo {
 
     /**

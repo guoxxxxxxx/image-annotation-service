@@ -9,14 +9,16 @@ package com.pipi.imageannotation.pojo.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Column;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 import java.util.Date;
 
 @Data
+@TableName("tb_datasets_info")
 public class DatasetsInfo {
 
     /**
@@ -66,4 +68,9 @@ public class DatasetsInfo {
      */
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
+
+    /**
+     * 所属类别id
+     */
+    private Long categoryId;
 }

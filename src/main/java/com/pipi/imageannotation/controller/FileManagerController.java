@@ -10,7 +10,6 @@ package com.pipi.imageannotation.controller;
 
 import com.pipi.imageannotation.aop.annotation.Logger;
 import com.pipi.imageannotation.common.CommonResult;
-import com.pipi.imageannotation.pojo.domain.FileInfo;
 import com.pipi.imageannotation.pojo.vo.FileTreeInfoVO;
 import com.pipi.imageannotation.service.FileManagerService;
 import io.swagger.annotations.ApiOperation;

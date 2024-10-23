@@ -49,6 +49,11 @@ public class CommonResult {
         return this;
     }
 
+    public CommonResult status(int status){
+        this.status = status;
+        return this;
+    }
+
 
     public CommonResult message(String message){
         this.message = message;

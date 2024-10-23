@@ -1,6 +1,5 @@
 package com.pipi.imageannotation.service;
 
-import com.pipi.imageannotation.pojo.domain.FileInfo;
 import com.pipi.imageannotation.pojo.vo.FileTreeInfoVO;
 
 import java.io.IOException;
@@ -14,4 +13,5 @@ public interface FileManagerService {
      * @return 文件目录结构
      */
     List<FileTreeInfoVO> getFileStructInfoByPath(String path, Boolean needDetails) throws IOException;
+
 }

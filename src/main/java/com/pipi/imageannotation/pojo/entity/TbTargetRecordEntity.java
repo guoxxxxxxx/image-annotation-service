@@ -86,7 +86,7 @@ public class TbTargetRecordEntity {
     /**
      * 删除位
      */
-    @Column(name = "delete_bit", columnDefinition = "BOOL")
+    @Column(name = "delete_bit", columnDefinition = "BOOL DEFAULT FALSE")
     private Boolean deleteBit;
 
     /**

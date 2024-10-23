@@ -1,4 +1,4 @@
-package com.pipi.imageannotation.pojo.domain;
+package com.pipi.imageannotation.pojo.domain.virtual;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;

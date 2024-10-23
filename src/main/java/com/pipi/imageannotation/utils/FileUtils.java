@@ -1,9 +1,9 @@
 package com.pipi.imageannotation.utils;
 
 import com.alibaba.fastjson2.JSON;
-import com.pipi.imageannotation.pojo.domain.FileInfo;
-import com.pipi.imageannotation.pojo.domain.FileUploadChunkInfo;
-import com.pipi.imageannotation.pojo.domain.FileUploadPartialInfo;
+import com.pipi.imageannotation.pojo.domain.virtual.FileInfo;
+import com.pipi.imageannotation.pojo.domain.virtual.FileUploadChunkInfo;
+import com.pipi.imageannotation.pojo.domain.virtual.FileUploadPartialInfo;
 
 import java.io.*;
 import java.nio.file.Files;

@@ -67,7 +67,7 @@ public class TbDatasetsInfoEntity {
     /**
      * 删除位
      */
-    @Column(name = "delete_bit", columnDefinition = "BOOL")
+    @Column(name = "delete_bit", columnDefinition = "BOOL DEFAULT FALSE")
     private Boolean deleteBit;
 
     /**
@@ -75,4 +75,10 @@ public class TbDatasetsInfoEntity {
      */
     @Column(name = "create_time", columnDefinition = "TIMESTAMP")
     private Date createTime;
+
+    /**
+     * 所属类别
+     */
+    @Column(name = "category_id", columnDefinition = "INT8")
+    private Long categoryId;
 }

@@ -53,6 +53,6 @@ public class TbFileUploadRecordEntity {
     /**
      * 删除位
      */
-    @Column(name = "delete_bit", columnDefinition = "bool")
+    @Column(name = "delete_bit", columnDefinition = "BOOL DEFAULT FALSE")
     private Boolean deleteBit;
 }

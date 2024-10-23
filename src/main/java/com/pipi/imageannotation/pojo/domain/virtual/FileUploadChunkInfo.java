@@ -1,4 +1,4 @@
-package com.pipi.imageannotation.pojo.domain;
+package com.pipi.imageannotation.pojo.domain.virtual;
 
 
 import lombok.AllArgsConstructor;
